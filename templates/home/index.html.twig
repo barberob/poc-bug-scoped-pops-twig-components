@@ -1,0 +1,11 @@
+{% block body %}
+    {# this is bugged #}
+    <twig:Nav:Link icon="my-icon">
+        <twig:Badge>1</twig:Badge>
+    </twig:Nav:Link>
+
+    {# this works #}
+    <twig:Nav:Link icon="my-icon">
+        <twig:FixedBadge>1</twig:FixedBadge>
+    </twig:Nav:Link>
+{% endblock %}

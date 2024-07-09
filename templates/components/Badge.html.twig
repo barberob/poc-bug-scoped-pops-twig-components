@@ -1,0 +1,10 @@
+{% props icon = null, variant = 'primary' %}
+
+<span {{ attributes.defaults({ class: 'badge' ~ variant }) }}>
+	{% if icon %}
+		<twig:Icon>{{ icon }}</twig:Icon>
+	{% endif %}
+
+    {% block content %}{% endblock %}
+</span>
+
